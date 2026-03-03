@@ -1,0 +1,39 @@
+{
+    "name": "solidwork/contao-simple-spam-trap-bundle-c5",
+    "description": "Simple spam protection for Contao 5 forms via honeypot and timestamp form fields",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "keywords": [
+        "contao",
+        "contao-bundle",
+        "spam",
+        "spam-protection",
+        "honeypot",
+        "form",
+        "anti-spam"
+    ],
+    "homepage": "https://github.com/ArturJo/contao-simple-spam-trap-bundle-c5",
+    "authors": [
+        {
+            "name": "ArturJo",
+            "homepage": "https://github.com/ArturJo"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ArturJo/contao-simple-spam-trap-bundle-c5/issues",
+        "source": "https://github.com/ArturJo/contao-simple-spam-trap-bundle-c5"
+    },
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3",
+        "psr/log": "^1|^2|^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SolidWork\\ContaoSimpleSpamTrapBundleC5\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "SolidWork\\ContaoSimpleSpamTrapBundleC5\\ContaoManager\\Plugin"
+    }
+}

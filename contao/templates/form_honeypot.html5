@@ -1,0 +1,7 @@
+<?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+<?php endif; ?>
+
+<div class="<?= $this->class ?> spam-honeypot-wrapper">
+    <?= $this->generate() ?>
+</div>

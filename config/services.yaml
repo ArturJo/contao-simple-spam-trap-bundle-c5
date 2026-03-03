@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    SolidWork\ContaoSimpleSpamTrapBundleC5\:
+        resource: ../src/
+        exclude:
+            - ../src/ContaoManager/
+            - ../src/ContaoSimpleSpamTrapBundleC5.php
+            - ../src/Widget/

@@ -1,0 +1,16 @@
+/* Honeypot field: move off-screen and hide visually. */
+.spam-honeypot-wrapper,
+.widget-honeypot,
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* Timestamp widget is hidden by default as it's a hidden field. */
+.widget-timestamp {
+    display: none;
+}

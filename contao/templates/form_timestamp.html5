@@ -1,0 +1,5 @@
+<?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+<?php endif; ?>
+
+<?= $this->generate() ?>
