@@ -10,6 +10,7 @@ Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/).
 
 ### Fixed
 - `TimestampWidget`: `__set()`-Signatur korrigiert — Typ-Deklarationen entfernt, damit die Methode kompatibel mit `Contao\Widget::__set($strKey, $varValue)` bleibt (PHP erlaubt keine engeren Parametertypen in Kindklassen)
+- `AddSpamTrapCssListener`: Hook-Signatur zurück auf keine Parameter — `Contao\PageRegular` existiert in Contao 5.3 nicht mehr, verhinderte die Service-Registrierung; `|static`-Flag entfernt (Kompatibilität mit Contao Encore)
 - `config/services.yaml`: `../src/Widget/` aus dem Symfony-DI-Autowiring ausgeschlossen — Contao-Widgets dürfen nicht als Services registriert werden
 - `TimestampWidget`: Fallback auf 8 Sekunden wenn `minTime` im Backend `0` oder leer ist (verhindert, dass alle Einreichungen durchkommen)
 - `ContaoSimpleSpamTrapBundleC5`: Monolog-Handler umbenannt zu `solidwork_spam_trap_file` (eindeutiger Präfix verhindert Kollision mit App-Konfiguration)
