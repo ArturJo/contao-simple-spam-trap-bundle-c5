@@ -2,6 +2,6 @@
     <p class="error"><?= $this->getErrorAsString() ?></p>
 <?php endif; ?>
 
-<div class="<?= $this->class ?> spam-honeypot-wrapper">
+<div class="<?= $this->class ?> spam-honeypot-wrapper" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;" aria-hidden="true">
     <?= $this->generate() ?>
 </div>
