@@ -30,14 +30,14 @@ class TimestampWidget extends Widget
      */
     protected int $minSeconds = 8;
 
-    public function __set(string $key, mixed $value): void
+    public function __set($strKey, $varValue): void
     {
-        if ('minTime' === $key) {
-            $intValue = (int) $value;
+        if ('minTime' === $strKey) {
+            $intValue = (int) $varValue;
             $this->minSeconds = $intValue > 0 ? $intValue : 8;
         }
 
-        parent::__set($key, $value);
+        parent::__set($strKey, $varValue);
     }
 
     /**
